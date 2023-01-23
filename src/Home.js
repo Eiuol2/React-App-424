@@ -10,12 +10,12 @@ const [password, setPassword] = useState('');
 
 
 
-function handelS() {
-    if ((username === "test") && (password === "123")){
-    return value.onLogin
-    }
-    else{
-    }
+    function handelS() {
+        if ((username === "test") && (password === "123")){
+            return value.onLogin()
+        } else{
+           alert('Not Authorized')
+        }
     }
 
 
@@ -35,11 +35,14 @@ function handelS() {
             <input value={password }type="password" name="password" onChange={(e) => setPassword(e.target.value)}/>
          </label>
 
-        <button type="button" onClick={handelS()}>          Sign In
+
+         <button type="button" onClick={handelS}>          Sign In
         </button>
+
 
         
       </form>
+
       
 
       
