@@ -38,14 +38,8 @@ const [password, setPassword] = useState('');
 
          <button type="button" onClick={handelS}>          Sign In
         </button>
-
-
         
       </form>
-
-      
-
-      
 
     </>
   );
